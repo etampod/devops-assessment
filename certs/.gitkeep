@@ -1,0 +1,2 @@
+# It's a placeholder so the `COPY certs/` command succeeds in the Dockerfile when no extra CAs exist.
+# Corporate TLS-inspection CAs (for example: Zscaler Root CA) are copied here by scripts/docker-build.sh and are gitignored.
