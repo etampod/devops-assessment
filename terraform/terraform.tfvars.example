@@ -1,0 +1,14 @@
+# Copy to terraform.tfvars and adjust for your local cluster.
+# terraform.tfvars is gitignored.
+
+namespace         = "sandbox"
+environment       = "dev"
+image_repository  = "confapi"
+image_tag         = "1.0.0"
+image_pull_policy = "IfNotPresent"
+release_name      = "sandbox"
+kubeconfig_path   = "~/.kube/config"
+kube_context      = "sandbox"
+ingress_enabled   = false
+ingress_host      = "confapi.local"
+replica_count     = 1
