@@ -1,0 +1,9 @@
+1. The service listens on port {{ .Values.service.port }} inside the cluster.
+2. Get the application URL:
+{{- if .Values.ingress.enabled }}
+  http://{{ .Values.ingress.host }}{{ .Values.ingress.path }}
+  Point {{ .Values.ingress.host }} at the ingress controller.
+{{- else }}
+  kubectl --namespace {{ .Release.Namespace }} port-forward svc/{{ include "confapi.fullname" . }} {{ .Values.service.port }}:{{ .Values.service.port }}
+  echo "Visit http://127.0.0.1:{{ .Values.service.port }}/health"
+{{- end }}
