@@ -1,0 +1,13 @@
+[
+  "tests/test_api.py::test_config_overwrite",
+  "tests/test_api.py::test_config_roundtrip",
+  "tests/test_api.py::test_delete_config",
+  "tests/test_api.py::test_delete_missing_config",
+  "tests/test_api.py::test_env",
+  "tests/test_api.py::test_get_missing_config",
+  "tests/test_api.py::test_health",
+  "tests/test_api.py::test_post_rejects_empty_name",
+  "tests/test_api.py::test_post_rejects_missing_fields",
+  "tests/test_api.py::test_version_default",
+  "tests/test_api.py::test_version_from_env"
+]
